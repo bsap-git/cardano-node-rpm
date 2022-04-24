@@ -1,6 +1,6 @@
 # cardano-node-rpm
 
-I am working on a desktop wallet and needed an easy way to manage getting a node setup so this is the start. I am hoping this might help someone else and hearing about any problems or concerns would help me! This repository holds both the rpmbuild directory, mock results directory, and ghc patches used. IOHK's libsodium is downloaded and compiled on the host.
+I am working on a desktop wallet and needed an easy way to manage getting a node setup so this is the start. I am hoping this might help someone else and hearing about any problems or concerns would help me! This repository holds the rpmbuild directory, mock results directory, and ghc patches used. IOHK's libsodium is downloaded and compiled on the host.
 
 # installing
 
