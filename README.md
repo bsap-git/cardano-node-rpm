@@ -29,3 +29,8 @@ If it fails there should be a build.log in /var/lib/mock/ you can peak at. It ta
  
 ## Contributing
 Tips, advice, concerns and pull requests are all welcome. I have an [open question](https://cardano.stackexchange.com/questions/8044/how-to-get-cardano-node-to-work-with-public-systemd-sockets) I'm particularly interested in getting solved.
+
+### TODO
+- Prevent the regular libsodium from coming up as ok.
+- The above open question.
+- Whatever else might pop up!
