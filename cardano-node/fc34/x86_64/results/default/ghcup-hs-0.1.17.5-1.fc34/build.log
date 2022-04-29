@@ -1,0 +1,96 @@
+Mock Version: 3.0
+ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/ghcup-hs.spec'], chrootPath='/var/lib/mock/fedora-34-x86_64/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f867fdd7d90>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']unshare_net=FalseprintOutput=True)
+Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'ff2c12d975f14d28a0754f4d8128ac56', '-D', '/var/lib/mock/fedora-34-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bs --target x86_64 --nodeps /builddir/build/SPECS/ghcup-hs.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1650844800
+Wrote: /builddir/build/SRPMS/ghcup-hs-0.1.17.5-1.fc34.src.rpm
+Child return code was: 0
+ENTER ['do_with_status'](['bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/ghcup-hs.spec'], chrootPath='/var/lib/mock/fedora-34-x86_64/root'env={'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'}shell=Falselogger=<mockbuild.trace_decorator.getLog object at 0x7f867fdd7d90>timeout=0uid=1000gid=135user='mockbuild'nspawn_args=['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']unshare_net=FalseprintOutput=True)
+Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '848c8019bc274c359569692d3dcbab83', '-D', '/var/lib/mock/fedora-34-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', 'bash', '--login', '-c', '/usr/bin/rpmbuild -bb --target x86_64 --nodeps /builddir/build/SPECS/ghcup-hs.spec'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+Building target platforms: x86_64
+Building for target x86_64
+setting SOURCE_DATE_EPOCH=1650844800
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.CQirYz
++ umask 022
++ cd /builddir/build/BUILD
++ curl -Lf https://github.com/haskell/ghcup-hs/releases/download/v0.1.17.5/x86_64-linux-ghcup-0.1.17.5
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   666  100   666    0     0   4690      0 --:--:-- --:--:-- --:--:--  4690
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 13.3M  100 13.3M    0     0  15.3M      0 --:--:-- --:--:-- --:--:-- 25.8M
++ curl -Lf https://raw.githubusercontent.com/haskell/ghcup-hs/v0.1.17.5/LICENSE
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  7650  100  7650    0     0  54642      0 --:--:-- --:--:-- --:--:-- 54642
++ curl -Lf https://github.com/haskell/ghcup-hs/releases/download/v0.1.17.5/SHA256SUMS
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   649  100   649    0     0   4214      0 --:--:-- --:--:-- --:--:--  4214
+100   873  100   873    0     0   3563      0 --:--:-- --:--:-- --:--:--  3563
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.n7Vrtj
++ umask 022
++ cd /builddir/build/BUILD
++ sha256sum --ignore-missing --check --quiet SHA256SUMS
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.MUQYZj
++ umask 022
++ cd /builddir/build/BUILD
++ '[' /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64 '!=' / ']'
++ rm -rf /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64
+++ dirname /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64
++ mkdir -p /builddir/build/BUILDROOT
++ mkdir /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64
++ rm -rf /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64
++ install -p -D x86_64-linux-ghcup-0.1.17.5 /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64//usr/bin/ghcup-hs
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/redhat/brp-ldconfig
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/redhat/brp-strip-lto /usr/bin/strip
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/redhat/brp-python-bytecompile '' 1 0
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-mangle-shebangs
+Executing(%check): /bin/sh -e /var/tmp/rpm-tmp.BBm7Qr
++ umask 022
++ cd /builddir/build/BUILD
++ /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64//usr/bin/ghcup-hs --version
+The GHCup Haskell installer, version v0.1.17.5
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Processing files: ghcup-hs-0.1.17.5-1.fc34.x86_64
+Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.A7g8qC
++ umask 022
++ cd /builddir/build/BUILD
++ LICENSEDIR=/builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64/usr/share/licenses/ghcup-hs
++ export LC_ALL=C
++ LC_ALL=C
++ export LICENSEDIR
++ /usr/bin/mkdir -p /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64/usr/share/licenses/ghcup-hs
++ cp -pr LICENSE /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64/usr/share/licenses/ghcup-hs
++ RPM_EC=0
+++ jobs -p
++ exit 0
+warning: Missing build-id in /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64/usr/bin/ghcup-hs
+Provides: ghcup-hs = 0.1.17.5-1.fc34 ghcup-hs(x86-64) = 0.1.17.5-1.fc34
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64
+Wrote: /builddir/build/RPMS/ghcup-hs-0.1.17.5-1.fc34.x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.Tkh6sI
++ umask 022
++ cd /builddir/build/BUILD
++ rm -rf /builddir/build/BUILDROOT/ghcup-hs-0.1.17.5-1.fc34.x86_64
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Child return code was: 0

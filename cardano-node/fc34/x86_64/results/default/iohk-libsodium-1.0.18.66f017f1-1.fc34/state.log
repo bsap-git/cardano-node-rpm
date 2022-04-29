@@ -1,0 +1,21 @@
+2022-04-28 22:22:29,397 - Mock Version: 3.0
+2022-04-28 22:22:29,400 - Start: clean chroot
+2022-04-28 22:22:30,862 - Finish: clean chroot
+2022-04-28 22:22:30,865 - Start(bootstrap): chroot init
+2022-04-28 22:22:30,877 - Start(bootstrap): cleaning package manager metadata
+2022-04-28 22:22:30,878 - Finish(bootstrap): cleaning package manager metadata
+2022-04-28 22:22:31,075 - Finish(bootstrap): chroot init
+2022-04-28 22:22:31,078 - Start: chroot init
+2022-04-28 22:22:31,089 - Start: unpacking root cache
+2022-04-28 22:22:31,869 - Finish: unpacking root cache
+2022-04-28 22:22:31,872 - Start: cleaning package manager metadata
+2022-04-28 22:22:31,874 - Finish: cleaning package manager metadata
+2022-04-28 22:22:32,528 - Start: dnf update
+2022-04-28 22:22:34,829 - Finish: dnf update
+2022-04-28 22:22:34,833 - Finish: chroot init
+2022-04-28 22:22:34,834 - Start: build phase for iohk-libsodium-1.0.18.66f017f1-1.fc34.src.rpm
+2022-04-28 22:22:34,835 - Start: build setup for iohk-libsodium-1.0.18.66f017f1-1.fc34.src.rpm
+2022-04-28 22:22:42,927 - Finish: build setup for iohk-libsodium-1.0.18.66f017f1-1.fc34.src.rpm
+2022-04-28 22:22:42,927 - Start: rpmbuild iohk-libsodium-1.0.18.66f017f1-1.fc34.src.rpm
+2022-04-28 22:23:09,011 - Finish: rpmbuild iohk-libsodium-1.0.18.66f017f1-1.fc34.src.rpm
+2022-04-28 22:23:09,014 - Finish: build phase for iohk-libsodium-1.0.18.66f017f1-1.fc34.src.rpm

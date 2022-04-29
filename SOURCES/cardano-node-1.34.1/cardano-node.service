@@ -1,0 +1,20 @@
+[Unit]
+Description=Cardano's node, v1.34.1
+Documentation=https://github.com/input-output-hk/cardano-node
+Wants=network.target
+PartOf=cardano-node.socket
+
+[Service]
+Type=simple
+ExecStart=/opt/cardano/cardano-node/cardano-node run --topology /etc/opt/cardano-node/mainnet-topology.json --database-path /srv/cardano-node/mainnet --config /etc/opt/cardano-node/mainnet-config.yaml
+NoNewPrivileges=true
+ProtectHome=true
+ProtectSystem=full
+Environment="LD_LIBRARY_PATH=/opt/cardano/lib"
+Nice=-1
+User=cardano-node
+ExecReload=/bin/kill -HUP $MAINPID
+Restart=on-failure
+NonBlocking=true
+StartLimitInterval=0
+LimitNOFILE=infinity

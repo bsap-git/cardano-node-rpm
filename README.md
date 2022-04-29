@@ -1,31 +1,31 @@
 # cardano-node-rpm
 
-I am working on a desktop wallet and needed an easy way to manage getting a node setup so this is the start. I am hoping this might help someone else and hearing about any problems or concerns would help me! This repository holds the rpmbuild directory, mock results directory, and ghc patches used. IOHK's libsodium is downloaded and compiled on the host.
+A package to make compiling, installing and managing node upgrades easy for rpm-based distributions. The node is ran as a systemd service, residing in /opt/cardano with the chain in /srv/ and you can find the unix socket in /run.
 
-# installing
+## Installation
 
-`sudo dnf install cardano-node-1.34.1-1.fc34.x86_64.rpm`
+Yum should work too.
 
-# building for something else
+```bash
+sudo dnf install <cardano-node>.rpm <iohk-libsodium>.rpm
+```
 
-You'll need to make sure mock has the `--enable-network` flag if you use it and the included cardano-node is compiled for x86_64.
+## Compiling
 
-# cautions
+```bash
+# clone repo
+git clone https://github.com/bsap-git/cardano-node-rpm ~/rpmbuild && cd ~/rpmbuild
 
-I explicitly run `find / -ignore_readdir_race -user cardano-node ! -group cardano -delete` on package removal, so if you already have files owned by user cardano-node they will get deleted. You can change this in the `cardano-node.spec` and run `rpmbuild -bs cardano-node.spec` to make a new source, or prevent it by making those files owned by group cardano.
+# check autoconf, if >= 2.70 look at comment in SPECS/cardano-node.spec
+autoconf --version
 
-The node will start on it's own and vim might freak out if you don't install the regular libsodium.
+# build source rpms for your distro
+rm -f SRPMS/* && rpmbuild -bs SPECS/*
 
-# other
-
-Eventually this will end up as three packges, ghc, libsodium, node... for now it's all bundled together. You can find the unix socket in /run/cardano-node.sk and the chain in /srv/cardano-node.
-
-# resources
-
-https://docs.fedoraproject.org/en-US/Fedora_Draft_Documentation/0.1/html-single/RPM_Guide/index.html
-
-http://0pointer.de/public/systemd-man/index.html
-
-https://docs.fedoraproject.org/en-US/packaging-guidelines/
-
-https://www.hobson.space/posts/haskell-foreign-library/
+# compile in chroot with mock (this includes compiling ghc so be warned!)
+mock --chain --enable-network --localrepo=./cardano-node/"{{dist}}"/"{{target_arch}}"/ SRPMS/ghcup-* SRPMS/iohk-* SRPMS/cardano-*
+```
+If it fails there should be a build.log in /var/lib/mock/ you can peak at. It takes about 75-90 minutes with 12 cores. If you want to build for something other than your machine you can pass an `-r` flag to mock with a `--buildsrpm` command to generate the correct srpms.
+ 
+## Contributing
+Tips, advice, concerns and pull requests are all welcome. I have an [open question](https://cardano.stackexchange.com/questions/8044/how-to-get-cardano-node-to-work-with-public-systemd-sockets) I'm particularly interested in getting solved.

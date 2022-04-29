@@ -1,0 +1,3 @@
+#Type   Name            ID  GECOS                   Home directory  Shell
+u       cardano-node    -   "Runs cardano-node"     -               -
+g       cardano         -   -                       -               -

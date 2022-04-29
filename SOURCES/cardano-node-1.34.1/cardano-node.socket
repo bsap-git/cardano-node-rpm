@@ -1,0 +1,16 @@
+[Unit]
+Requires=cardano-node.service
+
+#[Socket]
+#ListenStream=29171
+#Priority=6
+
+#[Socket]
+#ListenStream=29172
+#Priority=6
+
+[Socket]
+ListenSequentialPacket=/run/cardano-node.sk
+
+[Install]
+WantedBy=graphical.target multi-user.target

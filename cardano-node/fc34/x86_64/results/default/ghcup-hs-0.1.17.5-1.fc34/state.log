@@ -1,0 +1,23 @@
+2022-04-28 22:22:11,459 - Mock Version: 3.0
+2022-04-28 22:22:11,462 - Start: clean chroot
+2022-04-28 22:22:18,115 - Finish: clean chroot
+2022-04-28 22:22:18,119 - Start(bootstrap): chroot init
+2022-04-28 22:22:18,133 - Start(bootstrap): cleaning package manager metadata
+2022-04-28 22:22:18,133 - Finish(bootstrap): cleaning package manager metadata
+2022-04-28 22:22:18,343 - Finish(bootstrap): chroot init
+2022-04-28 22:22:18,346 - Start: chroot init
+2022-04-28 22:22:18,357 - Start: unpacking root cache
+2022-04-28 22:22:19,134 - Finish: unpacking root cache
+2022-04-28 22:22:19,136 - Start: cleaning package manager metadata
+2022-04-28 22:22:19,138 - Finish: cleaning package manager metadata
+2022-04-28 22:22:19,839 - Start: dnf update
+2022-04-28 22:22:22,014 - Finish: dnf update
+2022-04-28 22:22:22,021 - Finish: chroot init
+2022-04-28 22:22:22,023 - Start: build phase for ghcup-hs-0.1.17.5-1.fc34.src.rpm
+2022-04-28 22:22:22,025 - Start: build setup for ghcup-hs-0.1.17.5-1.fc34.src.rpm
+2022-04-28 22:22:23,476 - Finish: build setup for ghcup-hs-0.1.17.5-1.fc34.src.rpm
+2022-04-28 22:22:23,477 - Start: Outputting list of installed packages
+2022-04-28 22:22:23,553 - Finish: Outputting list of installed packages
+2022-04-28 22:22:23,554 - Start: rpmbuild ghcup-hs-0.1.17.5-1.fc34.src.rpm
+2022-04-28 22:22:29,326 - Finish: rpmbuild ghcup-hs-0.1.17.5-1.fc34.src.rpm
+2022-04-28 22:22:29,332 - Finish: build phase for ghcup-hs-0.1.17.5-1.fc34.src.rpm

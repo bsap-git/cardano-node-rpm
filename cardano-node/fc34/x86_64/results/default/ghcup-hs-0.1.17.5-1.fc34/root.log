@@ -1,0 +1,915 @@
+INFO buildroot.py:497:  Mock Version: 3.0
+DEBUG file_util.py:17:  ensuring that dir exists: /home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default/ghcup-hs-0.1.17.5-1.fc34
+DEBUG util.py:168:  kill orphans
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/mock/fedora-34-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/mock/fedora-34-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/fedora-34-x86_64/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/fedora-34-x86_64/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '/var/lib/mock/fedora-34-x86_64/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['btrfs', 'subv', 'list', '/var/lib/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:445:  ID 256 gen 30471 top level 5 path home
+DEBUG util.py:445:  ID 258 gen 30469 top level 5 path root
+DEBUG util.py:445:  ID 261 gen 30267 top level 258 path var/lib/portables
+DEBUG util.py:445:  ID 264 gen 30267 top level 258 path var/lib/machines
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/results
+INFO buildroot.py:174:  calling preinit hooks
+DEBUG file_util.py:17:  ensuring that dir exists: /var/cache/mock/fedora-34-x86_64-bootstrap/root_cache/
+DEBUG file_util.py:17:  ensuring that dir exists: /var/cache/mock/fedora-34-x86_64-bootstrap/yum_cache
+DEBUG file_util.py:17:  ensuring that dir exists: /var/cache/mock/fedora-34-x86_64-bootstrap/dnf_cache
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/usr/bin/lscpu'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:445:  Architecture:                    x86_64
+DEBUG util.py:445:  CPU op-mode(s):                  32-bit, 64-bit
+DEBUG util.py:445:  Byte Order:                      Little Endian
+DEBUG util.py:445:  Address sizes:                   43 bits physical, 48 bits virtual
+DEBUG util.py:445:  CPU(s):                          12
+DEBUG util.py:445:  On-line CPU(s) list:             0-11
+DEBUG util.py:445:  Thread(s) per core:              2
+DEBUG util.py:445:  Core(s) per socket:              6
+DEBUG util.py:445:  Socket(s):                       1
+DEBUG util.py:445:  NUMA node(s):                    1
+DEBUG util.py:445:  Vendor ID:                       AuthenticAMD
+DEBUG util.py:445:  CPU family:                      23
+DEBUG util.py:445:  Model:                           113
+DEBUG util.py:445:  Model name:                      AMD Ryzen 5 3600 6-Core Processor
+DEBUG util.py:445:  Stepping:                        0
+DEBUG util.py:445:  Frequency boost:                 enabled
+DEBUG util.py:445:  CPU MHz:                         2200.000
+DEBUG util.py:445:  CPU max MHz:                     4208.2031
+DEBUG util.py:445:  CPU min MHz:                     2200.0000
+DEBUG util.py:445:  BogoMIPS:                        7199.93
+DEBUG util.py:445:  Virtualization:                  AMD-V
+DEBUG util.py:445:  L1d cache:                       192 KiB
+DEBUG util.py:445:  L1i cache:                       192 KiB
+DEBUG util.py:445:  L2 cache:                        3 MiB
+DEBUG util.py:445:  L3 cache:                        32 MiB
+DEBUG util.py:445:  NUMA node0 CPU(s):               0-11
+DEBUG util.py:445:  Vulnerability Itlb multihit:     Not affected
+DEBUG util.py:445:  Vulnerability L1tf:              Not affected
+DEBUG util.py:445:  Vulnerability Mds:               Not affected
+DEBUG util.py:445:  Vulnerability Meltdown:          Not affected
+DEBUG util.py:445:  Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+DEBUG util.py:445:  Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+DEBUG util.py:445:  Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, STIBP conditional, RSB filling
+DEBUG util.py:445:  Vulnerability Srbds:             Not affected
+DEBUG util.py:445:  Vulnerability Tsx async abort:   Not affected
+DEBUG util.py:445:  Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sme sev sev_es
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/free'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:445:                 total        used        free      shared  buff/cache   available
+DEBUG util.py:445:  Mem:        32845660     1649828    17225312       27264    13970520    30747796
+DEBUG util.py:445:  Swap:        8388604           0     8388604
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/df', '-H', '/var/lib/mock/fedora-34-x86_64-bootstrap/root', '/var/cache/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:445:  Filesystem      Size  Used Avail Use% Mounted on
+DEBUG util.py:445:  /dev/nvme0n1p3  1.3T   68G  1.2T   6% /
+DEBUG util.py:445:  /dev/nvme0n1p3  1.3T   68G  1.2T   6% /
+DEBUG util.py:596:  Child return code was: 0
+DEBUG buildroot.py:553:  create skeleton dirs
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/rpm
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/yum
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/dbus
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/log
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/cache/dnf
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/cache/yum
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/rpm
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/tmp
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/tmp/ccache
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/tmp
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/dnf
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/dnf/vars
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/yum.repos.d
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/yum.repos.d
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/yum
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/proc
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/sys
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/run/lock
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/dev/pts
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/dev/shm
+DEBUG buildroot.py:681:  kernel version == 5.16.20-100.fc34.x86_64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/log/yum.log
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default', '/var/lib/mock/fedora-34-x86_64-bootstrap/root/home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG buildroot.py:201:  rootdir = /var/lib/mock/fedora-34-x86_64-bootstrap/root
+DEBUG buildroot.py:202:  resultdir = /var/lib/mock/fedora-34-x86_64-bootstrap/results
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/pki/mock
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/usr/share
+DEBUG package_manager.py:293:  Copying /usr/share/distribution-gpg-keys to the bootstrap chroot
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['cp', '-a', '/usr/share/distribution-gpg-keys', '/var/lib/mock/fedora-34-x86_64-bootstrap/root/usr/share'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc/dnf
+DEBUG package_manager.py:589:  configure DNF vars
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/etc
+DEBUG buildroot.py:33:  method _make_build_user skipped in bootstrap
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir/build
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir/build/RPMS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir/build/SPECS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir/build/SRPMS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir/build/SOURCES
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir/build/BUILD
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir/build/BUILDROOT
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir/build/originals
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/builddir
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64-bootstrap/root/.initialized
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root
+DEBUG file_util.py:17:  ensuring that dir exists: /home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default/ghcup-hs-0.1.17.5-1.fc34
+INFO buildroot.py:174:  calling preinit hooks
+DEBUG file_util.py:17:  ensuring that dir exists: /var/cache/mock/fedora-34-x86_64/root_cache/
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['gtar', '--use-compress-program', 'pigz', '-xf', '/var/cache/mock/fedora-34-x86_64/root_cache/cache.tar.gz', '-C', '/var/lib/mock/fedora-34-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/./proc
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/./proc
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/./sys
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/./sys
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/./dev
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/./dev
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/./tmp/ccache
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/./tmp/ccache
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/./var/cache/yum
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/./var/cache/yum
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/./var/cache/dnf
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/./var/cache/dnf
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/./var/log
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/./var/log
+DEBUG file_util.py:17:  ensuring that dir exists: /var/cache/mock/fedora-34-x86_64/yum_cache
+DEBUG file_util.py:17:  ensuring that dir exists: /var/cache/mock/fedora-34-x86_64/dnf_cache
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/usr/bin/lscpu'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:445:  Architecture:                    x86_64
+DEBUG util.py:445:  CPU op-mode(s):                  32-bit, 64-bit
+DEBUG util.py:445:  Byte Order:                      Little Endian
+DEBUG util.py:445:  Address sizes:                   43 bits physical, 48 bits virtual
+DEBUG util.py:445:  CPU(s):                          12
+DEBUG util.py:445:  On-line CPU(s) list:             0-11
+DEBUG util.py:445:  Thread(s) per core:              2
+DEBUG util.py:445:  Core(s) per socket:              6
+DEBUG util.py:445:  Socket(s):                       1
+DEBUG util.py:445:  NUMA node(s):                    1
+DEBUG util.py:445:  Vendor ID:                       AuthenticAMD
+DEBUG util.py:445:  CPU family:                      23
+DEBUG util.py:445:  Model:                           113
+DEBUG util.py:445:  Model name:                      AMD Ryzen 5 3600 6-Core Processor
+DEBUG util.py:445:  Stepping:                        0
+DEBUG util.py:445:  Frequency boost:                 enabled
+DEBUG util.py:445:  CPU MHz:                         2800.000
+DEBUG util.py:445:  CPU max MHz:                     4208.2031
+DEBUG util.py:445:  CPU min MHz:                     2200.0000
+DEBUG util.py:445:  BogoMIPS:                        7199.93
+DEBUG util.py:445:  Virtualization:                  AMD-V
+DEBUG util.py:445:  L1d cache:                       192 KiB
+DEBUG util.py:445:  L1i cache:                       192 KiB
+DEBUG util.py:445:  L2 cache:                        3 MiB
+DEBUG util.py:445:  L3 cache:                        32 MiB
+DEBUG util.py:445:  NUMA node0 CPU(s):               0-11
+DEBUG util.py:445:  Vulnerability Itlb multihit:     Not affected
+DEBUG util.py:445:  Vulnerability L1tf:              Not affected
+DEBUG util.py:445:  Vulnerability Mds:               Not affected
+DEBUG util.py:445:  Vulnerability Meltdown:          Not affected
+DEBUG util.py:445:  Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl
+DEBUG util.py:445:  Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+DEBUG util.py:445:  Vulnerability Spectre v2:        Mitigation; Retpolines, IBPB conditional, STIBP conditional, RSB filling
+DEBUG util.py:445:  Vulnerability Srbds:             Not affected
+DEBUG util.py:445:  Vulnerability Tsx async abort:   Not affected
+DEBUG util.py:445:  Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sme sev sev_es
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/free'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:445:                 total        used        free      shared  buff/cache   available
+DEBUG util.py:445:  Mem:        32845660     1655828    17013276       27264    14176556    30740396
+DEBUG util.py:445:  Swap:        8388604           0     8388604
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/df', '-H', '/var/lib/mock/fedora-34-x86_64/root', '/var/cache/mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:445:  Filesystem      Size  Used Avail Use% Mounted on
+DEBUG util.py:445:  /dev/nvme0n1p3  1.3T   68G  1.2T   6% /
+DEBUG util.py:445:  /dev/nvme0n1p3  1.3T   68G  1.2T   6% /
+DEBUG util.py:596:  Child return code was: 0
+DEBUG buildroot.py:553:  create skeleton dirs
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/lib/rpm
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/lib/yum
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/lib/dbus
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/log
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/cache/dnf
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/cache/yum
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc/rpm
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/tmp
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/tmp/ccache
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/tmp
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc/dnf
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc/dnf/vars
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc/yum.repos.d
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc/yum
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/proc
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/sys
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/run/lock
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/dev/pts
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/dev/pts
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/dev/shm
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/dev/shm
+DEBUG buildroot.py:681:  kernel version == 5.16.20-100.fc34.x86_64
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64/root/etc/fstab
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64/root/etc/yum/yum.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64/root/etc/dnf/dnf.conf
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64/root/var/log/yum.log
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/cache/yum
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/fedora-34-x86_64/yum_cache', '/var/lib/mock/fedora-34-x86_64/root/var/cache/yum'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/var/cache/dnf
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/var/cache/mock/fedora-34-x86_64/dnf_cache', '/var/lib/mock/fedora-34-x86_64/root/var/cache/dnf'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/proc
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64/root/proc/filesystems
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'bind', '/tmp/mock-selinux-plugin.p0hae64s', '/var/lib/mock/fedora-34-x86_64/root/proc/filesystems'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/mock/fedora-34-x86_64/root
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/mock/fedora-34-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/mock/fedora-34-x86_64/root
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/var/lib/mock/fedora-34-x86_64/root', '/var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/mock/fedora-34-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/var/lib/mock/fedora-34-x86_64-bootstrap/root/var/lib/mock/fedora-34-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG buildroot.py:201:  rootdir = /var/lib/mock/fedora-34-x86_64/root
+DEBUG buildroot.py:202:  resultdir = /home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default/ghcup-hs-0.1.17.5-1.fc34
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc/pki/mock
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc/dnf
+DEBUG package_manager.py:589:  configure DNF vars
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/etc
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args None
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'd87b5010dcff43d3998885a2d96f7c7c', '-D', '/var/lib/mock/fedora-34-x86_64/root', '-a', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args None
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'faf335dceae54678ad30274aaa941b1c', '-D', '/var/lib/mock/fedora-34-x86_64/root', '-a', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args None
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '767581492ee146f98202686d66aadace', '-D', '/var/lib/mock/fedora-34-x86_64/root', '-a', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args None
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '9986593688b94f59a4daf1b9150cc152', '-D', '/var/lib/mock/fedora-34-x86_64/root', '-a', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/usr/sbin/useradd', '-o', '-m', '-u', '1000', '-g', '135', '-d', '/builddir', '-n', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir/build
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/builddir/build
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir/build/RPMS
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/builddir/build/RPMS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir/build/SPECS
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/builddir/build/SPECS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir/build/SRPMS
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/builddir/build/SRPMS
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir/build/SOURCES
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/builddir/build/SOURCES
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir/build/BUILD
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/builddir/build/BUILD
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir/build/BUILDROOT
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/builddir/build/BUILDROOT
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir/build/originals
+DEBUG file_util.py:20:  creating dir: /var/lib/mock/fedora-34-x86_64/root/builddir/build/originals
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/builddir
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args None
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '30abd537d6cd4d408978765854ac39fb', '-D', '/var/lib/mock/fedora-34-x86_64-bootstrap/root', '-a', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/bin/rpm', '-qa', '--root', '/var/lib/mock/fedora-34-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:445:  gpg-pubkey-45719a39-5f2c0192
+DEBUG util.py:445:  libgcc-11.2.1-9.fc34.x86_64
+DEBUG util.py:445:  crypto-policies-20210213-1.git5c710c0.fc34.noarch
+DEBUG util.py:445:  fedora-release-identity-basic-34-39.noarch
+DEBUG util.py:445:  tzdata-2022a-1.fc34.noarch
+DEBUG util.py:445:  rust-srpm-macros-21-1.fc34.noarch
+DEBUG util.py:445:  libssh-config-0.9.6-1.fc34.noarch
+DEBUG util.py:445:  fedora-gpg-keys-34-2.noarch
+DEBUG util.py:445:  fedora-release-34-39.noarch
+DEBUG util.py:445:  fedora-repos-34-2.noarch
+DEBUG util.py:445:  fedora-release-common-34-39.noarch
+DEBUG util.py:445:  setup-2.13.7-3.fc34.noarch
+DEBUG util.py:445:  filesystem-3.14-5.fc34.x86_64
+DEBUG util.py:445:  basesystem-11-11.fc34.noarch
+DEBUG util.py:445:  coreutils-common-8.32-32.fc34.x86_64
+DEBUG util.py:445:  qt5-srpm-macros-5.15.2-2.fc34.noarch
+DEBUG util.py:445:  publicsuffix-list-dafsa-20190417-5.fc34.noarch
+DEBUG util.py:445:  pkgconf-m4-1.7.3-6.fc34.noarch
+DEBUG util.py:445:  perl-srpm-macros-1-39.fc34.noarch
+DEBUG util.py:445:  pcre2-syntax-10.36-4.fc34.noarch
+DEBUG util.py:445:  openblas-srpm-macros-2-9.fc34.noarch
+DEBUG util.py:445:  ocaml-srpm-macros-6-4.fc34.noarch
+DEBUG util.py:445:  nim-srpm-macros-3-4.fc34.noarch
+DEBUG util.py:445:  ncurses-base-6.2-4.20200222.fc34.noarch
+DEBUG util.py:445:  bash-5.1.0-2.fc34.x86_64
+DEBUG util.py:445:  ncurses-libs-6.2-4.20200222.fc34.x86_64
+DEBUG util.py:445:  glibc-common-2.33-21.fc34.x86_64
+DEBUG util.py:445:  glibc-minimal-langpack-2.33-21.fc34.x86_64
+DEBUG util.py:445:  glibc-2.33-21.fc34.x86_64
+DEBUG util.py:445:  zlib-1.2.11-26.fc34.x86_64
+DEBUG util.py:445:  xz-libs-5.2.5-5.fc34.x86_64
+DEBUG util.py:445:  bzip2-libs-1.0.8-6.fc34.x86_64
+DEBUG util.py:445:  elfutils-libelf-0.186-1.fc34.x86_64
+DEBUG util.py:445:  libstdc++-11.2.1-9.fc34.x86_64
+DEBUG util.py:445:  libxcrypt-4.4.28-1.fc34.x86_64
+DEBUG util.py:445:  libzstd-1.5.2-1.fc34.x86_64
+DEBUG util.py:445:  gmp-6.2.0-6.fc34.x86_64
+DEBUG util.py:445:  libattr-2.5.1-1.fc34.x86_64
+DEBUG util.py:445:  libacl-2.3.1-1.fc34.x86_64
+DEBUG util.py:445:  libcap-2.48-2.fc34.x86_64
+DEBUG util.py:445:  libcom_err-1.45.6-5.fc34.x86_64
+DEBUG util.py:445:  libuuid-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  popt-1.18-4.fc34.x86_64
+DEBUG util.py:445:  lz4-libs-1.9.3-2.fc34.x86_64
+DEBUG util.py:445:  readline-8.1-2.fc34.x86_64
+DEBUG util.py:445:  mpfr-4.1.0-7.fc34.x86_64
+DEBUG util.py:445:  unzip-6.0-50.fc34.x86_64
+DEBUG util.py:445:  sqlite-libs-3.34.1-2.fc34.x86_64
+DEBUG util.py:445:  file-libs-5.39-7.fc34.x86_64
+DEBUG util.py:445:  file-5.39-7.fc34.x86_64
+DEBUG util.py:445:  alternatives-1.15-2.fc34.x86_64
+DEBUG util.py:445:  libcap-ng-0.8.2-4.fc34.x86_64
+DEBUG util.py:445:  audit-libs-3.0.6-1.fc34.x86_64
+DEBUG util.py:445:  libunistring-0.9.10-10.fc34.x86_64
+DEBUG util.py:445:  libidn2-2.3.2-1.fc34.x86_64
+DEBUG util.py:445:  pcre2-10.36-4.fc34.x86_64
+DEBUG util.py:445:  libdb-5.3.28-49.fc34.x86_64
+DEBUG util.py:445:  libsepol-3.2-2.fc34.x86_64
+DEBUG util.py:445:  libselinux-3.2-1.fc34.x86_64
+DEBUG util.py:445:  sed-4.8-7.fc34.x86_64
+DEBUG util.py:445:  findutils-4.8.0-2.fc34.x86_64
+DEBUG util.py:445:  lua-libs-5.4.4-1.fc34.x86_64
+DEBUG util.py:445:  libsemanage-3.2-1.fc34.x86_64
+DEBUG util.py:445:  shadow-utils-4.8.1-10.fc34.x86_64
+DEBUG util.py:445:  libutempter-1.2.1-4.fc34.x86_64
+DEBUG util.py:445:  tar-1.34-1.fc34.x86_64
+DEBUG util.py:445:  libpsl-0.21.1-3.fc34.x86_64
+DEBUG util.py:445:  zip-3.0-28.fc34.x86_64
+DEBUG util.py:445:  zstd-1.5.2-1.fc34.x86_64
+DEBUG util.py:445:  dwz-0.14-1.fc34.x86_64
+DEBUG util.py:445:  bzip2-1.0.8-6.fc34.x86_64
+DEBUG util.py:445:  libxml2-2.9.13-1.fc34.x86_64
+DEBUG util.py:445:  info-6.7-10.fc34.x86_64
+DEBUG util.py:445:  ed-1.14.2-10.fc34.x86_64
+DEBUG util.py:445:  patch-2.7.6-14.fc34.x86_64
+DEBUG util.py:445:  cpio-2.13-10.fc34.x86_64
+DEBUG util.py:445:  diffutils-3.7-8.fc34.x86_64
+DEBUG util.py:445:  keyutils-libs-1.6.1-2.fc34.x86_64
+DEBUG util.py:445:  libbrotli-1.0.9-4.fc34.x86_64
+DEBUG util.py:445:  libffi-3.1-28.fc34.x86_64
+DEBUG util.py:445:  p11-kit-0.23.22-3.fc34.x86_64
+DEBUG util.py:445:  libgpg-error-1.42-1.fc34.x86_64
+DEBUG util.py:445:  libgcrypt-1.9.3-3.fc34.x86_64
+DEBUG util.py:445:  libnghttp2-1.43.0-2.fc34.x86_64
+DEBUG util.py:445:  libpkgconf-1.7.3-6.fc34.x86_64
+DEBUG util.py:445:  pkgconf-1.7.3-6.fc34.x86_64
+DEBUG util.py:445:  pkgconf-pkg-config-1.7.3-6.fc34.x86_64
+DEBUG util.py:445:  libsigsegv-2.13-2.fc34.x86_64
+DEBUG util.py:445:  gawk-5.1.0-3.fc34.x86_64
+DEBUG util.py:445:  libsmartcols-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  libtasn1-4.16.0-4.fc34.x86_64
+DEBUG util.py:445:  p11-kit-trust-0.23.22-3.fc34.x86_64
+DEBUG util.py:445:  libverto-0.3.2-1.fc34.x86_64
+DEBUG util.py:445:  pcre-8.44-3.fc34.1.x86_64
+DEBUG util.py:445:  grep-3.6-2.fc34.x86_64
+DEBUG util.py:445:  xz-5.2.5-5.fc34.x86_64
+DEBUG util.py:445:  openssl-libs-1.1.1n-1.fc34.x86_64
+DEBUG util.py:445:  coreutils-8.32-32.fc34.x86_64
+DEBUG util.py:445:  ca-certificates-2021.2.52-1.0.fc34.noarch
+DEBUG util.py:445:  krb5-libs-1.19.2-5.fc34.x86_64
+DEBUG util.py:445:  libblkid-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  libtirpc-1.3.2-0.fc34.x86_64
+DEBUG util.py:445:  gzip-1.10-4.fc34.x86_64
+DEBUG util.py:445:  cracklib-2.9.6-27.fc34.x86_64
+DEBUG util.py:445:  libnsl2-1.3.0-2.fc34.x86_64
+DEBUG util.py:445:  libfdisk-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  libmount-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  cyrus-sasl-lib-2.1.27-9.fc34.x86_64
+DEBUG util.py:445:  openldap-2.4.57-6.fc34.x86_64
+DEBUG util.py:445:  libssh-0.9.6-1.fc34.x86_64
+DEBUG util.py:445:  libcurl-7.76.1-12.fc34.x86_64
+DEBUG util.py:445:  curl-7.76.1-12.fc34.x86_64
+DEBUG util.py:445:  systemd-libs-248.10-1.fc34.x86_64
+DEBUG util.py:445:  libarchive-3.5.2-2.fc34.x86_64
+DEBUG util.py:445:  rpm-libs-4.16.1.3-1.fc34.x86_64
+DEBUG util.py:445:  rpm-4.16.1.3-1.fc34.x86_64
+DEBUG util.py:445:  lua-srpm-macros-1-4.fc34.noarch
+DEBUG util.py:445:  efi-srpm-macros-5-4.fc34.noarch
+DEBUG util.py:445:  rpmautospec-rpm-macros-0.2.5-1.fc34.noarch
+DEBUG util.py:445:  libeconf-0.4.0-1.fc34.x86_64
+DEBUG util.py:445:  libpwquality-1.4.4-6.fc34.x86_64
+DEBUG util.py:445:  pam-1.5.1-8.fc34.x86_64
+DEBUG util.py:445:  libgomp-11.2.1-9.fc34.x86_64
+DEBUG util.py:445:  xxhash-libs-0.8.1-1.fc34.x86_64
+DEBUG util.py:445:  elfutils-default-yama-scope-0.186-1.fc34.noarch
+DEBUG util.py:445:  elfutils-libs-0.186-1.fc34.x86_64
+DEBUG util.py:445:  elfutils-debuginfod-client-0.186-1.fc34.x86_64
+DEBUG util.py:445:  binutils-gold-2.35.2-6.fc34.x86_64
+DEBUG util.py:445:  binutils-2.35.2-6.fc34.x86_64
+DEBUG util.py:445:  elfutils-0.186-1.fc34.x86_64
+DEBUG util.py:445:  gdb-minimal-11.1-5.fc34.x86_64
+DEBUG util.py:445:  rpm-build-libs-4.16.1.3-1.fc34.x86_64
+DEBUG util.py:445:  kernel-srpm-macros-1.0-4.fc34.noarch
+DEBUG util.py:445:  gnat-srpm-macros-4-13.fc34.noarch
+DEBUG util.py:445:  ghc-srpm-macros-1.5.0-4.fc34.noarch
+DEBUG util.py:445:  fpc-srpm-macros-1.3-3.fc34.noarch
+DEBUG util.py:445:  fonts-srpm-macros-2.0.5-5.fc34.noarch
+DEBUG util.py:445:  go-srpm-macros-3.0.15-1.fc34.noarch
+DEBUG util.py:445:  python-srpm-macros-3.9-41.fc34.noarch
+DEBUG util.py:445:  redhat-rpm-config-183-3.fc34.noarch
+DEBUG util.py:445:  rpm-build-4.16.1.3-1.fc34.x86_64
+DEBUG util.py:445:  util-linux-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  which-2.21-26.fc34.x86_64
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/proc
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/proc
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/sys
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/sys
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/dev/shm
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/fedora-34-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/dev/pts
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/fedora-34-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/sys/fs/selinux
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/fedora-34-x86_64/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/installation-homedir
+DEBUG package_manager.py:197:  ['/usr/bin/dnf', '--installroot', '/var/lib/mock/fedora-34-x86_64/root/', '-y', '--releasever', '34', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'update']
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.ycedtaro:/etc/resolv.conf']
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '54763138c37f44d5b0f240da5198e323', '-D', '/var/lib/mock/fedora-34-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.ycedtaro:/etc/resolv.conf', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/var/lib/mock/fedora-34-x86_64/root/installation-homedir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=LC_MESSAGES=C.UTF-8', '--resolv-conf=off', '/usr/bin/dnf', '--installroot', '/var/lib/mock/fedora-34-x86_64/root/', '-y', '--releasever', '34', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'update', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/fedora-34-x86_64/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:443:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:445:  file:///home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default                                                                                                                                                                                                                                                                                           2.9 MB/s | 3.0 kB     00:00    
+DEBUG util.py:445:  file:///home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default                                                                                                                                                                                                                                                                                            41 kB/s | 257  B     00:00    
+DEBUG util.py:445:  fedora                                                                                                                                                                                                                                                                                                                                                         45 kB/s |  12 kB     00:00    
+DEBUG util.py:445:  updates                                                                                                                                                                                                                                                                                                                                                        36 kB/s |  11 kB     00:00    
+DEBUG util.py:445:  Dependencies resolved.
+DEBUG util.py:445:  Nothing to do.
+DEBUG util.py:445:  Complete!
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:168:  kill orphans
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args None
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '88a75797e59045018c9cb8c1bd8fa86f', '-D', '/var/lib/mock/fedora-34-x86_64-bootstrap/root', '-a', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/bin/rpm', '-qa', '--root', '/var/lib/mock/fedora-34-x86_64/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:445:  gpg-pubkey-45719a39-5f2c0192
+DEBUG util.py:445:  libgcc-11.2.1-9.fc34.x86_64
+DEBUG util.py:445:  crypto-policies-20210213-1.git5c710c0.fc34.noarch
+DEBUG util.py:445:  fedora-release-identity-basic-34-39.noarch
+DEBUG util.py:445:  tzdata-2022a-1.fc34.noarch
+DEBUG util.py:445:  rust-srpm-macros-21-1.fc34.noarch
+DEBUG util.py:445:  libssh-config-0.9.6-1.fc34.noarch
+DEBUG util.py:445:  fedora-gpg-keys-34-2.noarch
+DEBUG util.py:445:  fedora-release-34-39.noarch
+DEBUG util.py:445:  fedora-repos-34-2.noarch
+DEBUG util.py:445:  fedora-release-common-34-39.noarch
+DEBUG util.py:445:  setup-2.13.7-3.fc34.noarch
+DEBUG util.py:445:  filesystem-3.14-5.fc34.x86_64
+DEBUG util.py:445:  basesystem-11-11.fc34.noarch
+DEBUG util.py:445:  coreutils-common-8.32-32.fc34.x86_64
+DEBUG util.py:445:  qt5-srpm-macros-5.15.2-2.fc34.noarch
+DEBUG util.py:445:  publicsuffix-list-dafsa-20190417-5.fc34.noarch
+DEBUG util.py:445:  pkgconf-m4-1.7.3-6.fc34.noarch
+DEBUG util.py:445:  perl-srpm-macros-1-39.fc34.noarch
+DEBUG util.py:445:  pcre2-syntax-10.36-4.fc34.noarch
+DEBUG util.py:445:  openblas-srpm-macros-2-9.fc34.noarch
+DEBUG util.py:445:  ocaml-srpm-macros-6-4.fc34.noarch
+DEBUG util.py:445:  nim-srpm-macros-3-4.fc34.noarch
+DEBUG util.py:445:  ncurses-base-6.2-4.20200222.fc34.noarch
+DEBUG util.py:445:  bash-5.1.0-2.fc34.x86_64
+DEBUG util.py:445:  ncurses-libs-6.2-4.20200222.fc34.x86_64
+DEBUG util.py:445:  glibc-common-2.33-21.fc34.x86_64
+DEBUG util.py:445:  glibc-minimal-langpack-2.33-21.fc34.x86_64
+DEBUG util.py:445:  glibc-2.33-21.fc34.x86_64
+DEBUG util.py:445:  zlib-1.2.11-26.fc34.x86_64
+DEBUG util.py:445:  xz-libs-5.2.5-5.fc34.x86_64
+DEBUG util.py:445:  bzip2-libs-1.0.8-6.fc34.x86_64
+DEBUG util.py:445:  elfutils-libelf-0.186-1.fc34.x86_64
+DEBUG util.py:445:  libstdc++-11.2.1-9.fc34.x86_64
+DEBUG util.py:445:  libxcrypt-4.4.28-1.fc34.x86_64
+DEBUG util.py:445:  libzstd-1.5.2-1.fc34.x86_64
+DEBUG util.py:445:  gmp-6.2.0-6.fc34.x86_64
+DEBUG util.py:445:  libattr-2.5.1-1.fc34.x86_64
+DEBUG util.py:445:  libacl-2.3.1-1.fc34.x86_64
+DEBUG util.py:445:  libcap-2.48-2.fc34.x86_64
+DEBUG util.py:445:  libcom_err-1.45.6-5.fc34.x86_64
+DEBUG util.py:445:  libuuid-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  popt-1.18-4.fc34.x86_64
+DEBUG util.py:445:  lz4-libs-1.9.3-2.fc34.x86_64
+DEBUG util.py:445:  readline-8.1-2.fc34.x86_64
+DEBUG util.py:445:  mpfr-4.1.0-7.fc34.x86_64
+DEBUG util.py:445:  unzip-6.0-50.fc34.x86_64
+DEBUG util.py:445:  sqlite-libs-3.34.1-2.fc34.x86_64
+DEBUG util.py:445:  file-libs-5.39-7.fc34.x86_64
+DEBUG util.py:445:  file-5.39-7.fc34.x86_64
+DEBUG util.py:445:  alternatives-1.15-2.fc34.x86_64
+DEBUG util.py:445:  libcap-ng-0.8.2-4.fc34.x86_64
+DEBUG util.py:445:  audit-libs-3.0.6-1.fc34.x86_64
+DEBUG util.py:445:  libunistring-0.9.10-10.fc34.x86_64
+DEBUG util.py:445:  libidn2-2.3.2-1.fc34.x86_64
+DEBUG util.py:445:  pcre2-10.36-4.fc34.x86_64
+DEBUG util.py:445:  libdb-5.3.28-49.fc34.x86_64
+DEBUG util.py:445:  libsepol-3.2-2.fc34.x86_64
+DEBUG util.py:445:  libselinux-3.2-1.fc34.x86_64
+DEBUG util.py:445:  sed-4.8-7.fc34.x86_64
+DEBUG util.py:445:  findutils-4.8.0-2.fc34.x86_64
+DEBUG util.py:445:  lua-libs-5.4.4-1.fc34.x86_64
+DEBUG util.py:445:  libsemanage-3.2-1.fc34.x86_64
+DEBUG util.py:445:  shadow-utils-4.8.1-10.fc34.x86_64
+DEBUG util.py:445:  libutempter-1.2.1-4.fc34.x86_64
+DEBUG util.py:445:  tar-1.34-1.fc34.x86_64
+DEBUG util.py:445:  libpsl-0.21.1-3.fc34.x86_64
+DEBUG util.py:445:  zip-3.0-28.fc34.x86_64
+DEBUG util.py:445:  zstd-1.5.2-1.fc34.x86_64
+DEBUG util.py:445:  dwz-0.14-1.fc34.x86_64
+DEBUG util.py:445:  bzip2-1.0.8-6.fc34.x86_64
+DEBUG util.py:445:  libxml2-2.9.13-1.fc34.x86_64
+DEBUG util.py:445:  info-6.7-10.fc34.x86_64
+DEBUG util.py:445:  ed-1.14.2-10.fc34.x86_64
+DEBUG util.py:445:  patch-2.7.6-14.fc34.x86_64
+DEBUG util.py:445:  cpio-2.13-10.fc34.x86_64
+DEBUG util.py:445:  diffutils-3.7-8.fc34.x86_64
+DEBUG util.py:445:  keyutils-libs-1.6.1-2.fc34.x86_64
+DEBUG util.py:445:  libbrotli-1.0.9-4.fc34.x86_64
+DEBUG util.py:445:  libffi-3.1-28.fc34.x86_64
+DEBUG util.py:445:  p11-kit-0.23.22-3.fc34.x86_64
+DEBUG util.py:445:  libgpg-error-1.42-1.fc34.x86_64
+DEBUG util.py:445:  libgcrypt-1.9.3-3.fc34.x86_64
+DEBUG util.py:445:  libnghttp2-1.43.0-2.fc34.x86_64
+DEBUG util.py:445:  libpkgconf-1.7.3-6.fc34.x86_64
+DEBUG util.py:445:  pkgconf-1.7.3-6.fc34.x86_64
+DEBUG util.py:445:  pkgconf-pkg-config-1.7.3-6.fc34.x86_64
+DEBUG util.py:445:  libsigsegv-2.13-2.fc34.x86_64
+DEBUG util.py:445:  gawk-5.1.0-3.fc34.x86_64
+DEBUG util.py:445:  libsmartcols-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  libtasn1-4.16.0-4.fc34.x86_64
+DEBUG util.py:445:  p11-kit-trust-0.23.22-3.fc34.x86_64
+DEBUG util.py:445:  libverto-0.3.2-1.fc34.x86_64
+DEBUG util.py:445:  pcre-8.44-3.fc34.1.x86_64
+DEBUG util.py:445:  grep-3.6-2.fc34.x86_64
+DEBUG util.py:445:  xz-5.2.5-5.fc34.x86_64
+DEBUG util.py:445:  openssl-libs-1.1.1n-1.fc34.x86_64
+DEBUG util.py:445:  coreutils-8.32-32.fc34.x86_64
+DEBUG util.py:445:  ca-certificates-2021.2.52-1.0.fc34.noarch
+DEBUG util.py:445:  krb5-libs-1.19.2-5.fc34.x86_64
+DEBUG util.py:445:  libblkid-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  libtirpc-1.3.2-0.fc34.x86_64
+DEBUG util.py:445:  gzip-1.10-4.fc34.x86_64
+DEBUG util.py:445:  cracklib-2.9.6-27.fc34.x86_64
+DEBUG util.py:445:  libnsl2-1.3.0-2.fc34.x86_64
+DEBUG util.py:445:  libfdisk-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  libmount-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  cyrus-sasl-lib-2.1.27-9.fc34.x86_64
+DEBUG util.py:445:  openldap-2.4.57-6.fc34.x86_64
+DEBUG util.py:445:  libssh-0.9.6-1.fc34.x86_64
+DEBUG util.py:445:  libcurl-7.76.1-12.fc34.x86_64
+DEBUG util.py:445:  curl-7.76.1-12.fc34.x86_64
+DEBUG util.py:445:  systemd-libs-248.10-1.fc34.x86_64
+DEBUG util.py:445:  libarchive-3.5.2-2.fc34.x86_64
+DEBUG util.py:445:  rpm-libs-4.16.1.3-1.fc34.x86_64
+DEBUG util.py:445:  rpm-4.16.1.3-1.fc34.x86_64
+DEBUG util.py:445:  lua-srpm-macros-1-4.fc34.noarch
+DEBUG util.py:445:  efi-srpm-macros-5-4.fc34.noarch
+DEBUG util.py:445:  rpmautospec-rpm-macros-0.2.5-1.fc34.noarch
+DEBUG util.py:445:  libeconf-0.4.0-1.fc34.x86_64
+DEBUG util.py:445:  libpwquality-1.4.4-6.fc34.x86_64
+DEBUG util.py:445:  pam-1.5.1-8.fc34.x86_64
+DEBUG util.py:445:  libgomp-11.2.1-9.fc34.x86_64
+DEBUG util.py:445:  xxhash-libs-0.8.1-1.fc34.x86_64
+DEBUG util.py:445:  elfutils-default-yama-scope-0.186-1.fc34.noarch
+DEBUG util.py:445:  elfutils-libs-0.186-1.fc34.x86_64
+DEBUG util.py:445:  elfutils-debuginfod-client-0.186-1.fc34.x86_64
+DEBUG util.py:445:  binutils-gold-2.35.2-6.fc34.x86_64
+DEBUG util.py:445:  binutils-2.35.2-6.fc34.x86_64
+DEBUG util.py:445:  elfutils-0.186-1.fc34.x86_64
+DEBUG util.py:445:  gdb-minimal-11.1-5.fc34.x86_64
+DEBUG util.py:445:  rpm-build-libs-4.16.1.3-1.fc34.x86_64
+DEBUG util.py:445:  kernel-srpm-macros-1.0-4.fc34.noarch
+DEBUG util.py:445:  gnat-srpm-macros-4-13.fc34.noarch
+DEBUG util.py:445:  ghc-srpm-macros-1.5.0-4.fc34.noarch
+DEBUG util.py:445:  fpc-srpm-macros-1.3-3.fc34.noarch
+DEBUG util.py:445:  fonts-srpm-macros-2.0.5-5.fc34.noarch
+DEBUG util.py:445:  go-srpm-macros-3.0.15-1.fc34.noarch
+DEBUG util.py:445:  python-srpm-macros-3.9-41.fc34.noarch
+DEBUG util.py:445:  redhat-rpm-config-183-3.fc34.noarch
+DEBUG util.py:445:  rpm-build-4.16.1.3-1.fc34.x86_64
+DEBUG util.py:445:  util-linux-2.36.2-1.fc34.x86_64
+DEBUG util.py:445:  which-2.21-26.fc34.x86_64
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:30:  touching file: /var/lib/mock/fedora-34-x86_64/root/.initialized
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '60f28660d42c447f961474235c2c55de', '-D', '/var/lib/mock/fedora-34-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/ghcup-hs-0.1.17.5-1.fc34.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:445:  Updating / installing...
+DEBUG util.py:443:  ghcup-hs-0.1.17.5-1.fc34              warning: user bsap does not exist - using root
+DEBUG util.py:443:  warning: group bsap does not exist - using root
+DEBUG util.py:445:  ########################################
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11']
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', 'db94300fc3a14bb3a7a584a4c89bf5c0', '-D', '/var/lib/mock/fedora-34-x86_64/root', '-a', '-u', 'mockbuild', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.vjoexn6n:/etc/resolv.conf', '--bind=/dev/btrfs-control', '--bind=/dev/loop-control', '--bind=/dev/loop0', '--bind=/dev/loop1', '--bind=/dev/loop2', '--bind=/dev/loop3', '--bind=/dev/loop4', '--bind=/dev/loop5', '--bind=/dev/loop6', '--bind=/dev/loop7', '--bind=/dev/loop8', '--bind=/dev/loop9', '--bind=/dev/loop10', '--bind=/dev/loop11', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/bin/rpm', '-qpl', '/builddir/build/originals/ghcup-hs-0.1.17.5-1.fc34.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:445:  ghcup-hs.spec
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/proc
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/proc
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/sys
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/sys
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/dev/shm
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/fedora-34-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/dev/pts
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/var/lib/mock/fedora-34-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/sys/fs/selinux
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/var/lib/mock/fedora-34-x86_64/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_util.py:17:  ensuring that dir exists: /var/lib/mock/fedora-34-x86_64/root/installation-homedir
+DEBUG package_manager.py:197:  ['/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/fedora-34-x86_64/root/', '--releasever', '34', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/fedora-34-x86_64/root//builddir/build/SRPMS/ghcup-hs-0.1.17.5-1.fc34.src.rpm']
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args ['--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.ycedtaro:/etc/resolv.conf']
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '0398f00276964f32b66109373da61387', '-D', '/var/lib/mock/fedora-34-x86_64-bootstrap/root', '-a', '--capability=cap_ipc_lock', '--bind=/tmp/mock-resolv.ycedtaro:/etc/resolv.conf', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/var/lib/mock/fedora-34-x86_64/root/installation-homedir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--setenv=LC_MESSAGES=C.UTF-8', '--resolv-conf=off', '/usr/bin/dnf', 'builddep', '--installroot', '/var/lib/mock/fedora-34-x86_64/root/', '--releasever', '34', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/var/lib/mock/fedora-34-x86_64/root//builddir/build/SRPMS/ghcup-hs-0.1.17.5-1.fc34.src.rpm', '--setopt=tsflags=nocontexts'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/var/lib/mock/fedora-34-x86_64/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:443:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:445:  file:///home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default                                                                                                                                                                                                                                                                                           2.9 MB/s | 3.0 kB     00:00    
+DEBUG util.py:445:  fedora                                                                                                                                                                                                                                                                                                                                                         86 kB/s |  12 kB     00:00    
+DEBUG util.py:445:  updates                                                                                                                                                                                                                                                                                                                                                        74 kB/s |  11 kB     00:00    
+DEBUG util.py:445:  Package coreutils-8.32-32.fc34.x86_64 is already installed.
+DEBUG util.py:445:  Package curl-7.76.1-12.fc34.x86_64 is already installed.
+DEBUG util.py:445:  Dependencies resolved.
+DEBUG util.py:445:  Nothing to do.
+DEBUG util.py:445:  Complete!
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/sys/fs/selinux'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/bin/umount', '-n', '-l', '/var/lib/mock/fedora-34-x86_64/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:168:  kill orphans
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:535:  Using nspawn with args None
+DEBUG util.py:540:  Executing command: ['/usr/bin/systemd-nspawn', '-q', '-M', '85a5745378534f1e8e74f1ee23a6b88d', '-D', '/var/lib/mock/fedora-34-x86_64-bootstrap/root', '-a', '--console=pipe', '--setenv=TERM=vt100', '--setenv=SHELL=/bin/bash', '--setenv=HOME=/builddir', '--setenv=HOSTNAME=mock', '--setenv=PATH=/usr/bin:/bin:/usr/sbin:/sbin', '--setenv=PROMPT_COMMAND=printf "\\033]0;<mock-chroot>\\007"', '--setenv=PS1=<mock-chroot> \\s-\\v\\$ ', '--setenv=LANG=C.UTF-8', '--resolv-conf=off', '/bin/sh', '-c', "rpm -qa --root '/var/lib/mock/fedora-34-x86_64/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\\n'"] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'SYSTEMD_NSPAWN_TMPFS_TMP': '0', 'SYSTEMD_SECCOMP': '0'} and shell False
+DEBUG util.py:445:  gpg-pubkey-45719a39-5f2c0192 1596719506 0 (none) installed
+DEBUG util.py:445:  libgcc-11.2.1-9.fc34.x86_64 1643275848 198708 0f34916982baeca17b9f1e3517fd4226 installed
+DEBUG util.py:445:  crypto-policies-20210213-1.git5c710c0.fc34.noarch 1613221317 85288 8669fbb8e99ab7d5d26ac2cd4fc6c4b5 installed
+DEBUG util.py:445:  fedora-release-identity-basic-34-39.noarch 1637825783 706 fa730f13206d1833ddd56f2e90902e34 installed
+DEBUG util.py:445:  tzdata-2022a-1.fc34.noarch 1648080445 1803367 0de303af15ade48d976da21edaf48b88 installed
+DEBUG util.py:445:  rust-srpm-macros-21-1.fc34.noarch 1645370704 2447 86c4ef9d552211b905bbb219d6c36628 installed
+DEBUG util.py:445:  libssh-config-0.9.6-1.fc34.noarch 1632239405 277 115f2b8688028e08817ae8b576e49733 installed
+DEBUG util.py:445:  fedora-gpg-keys-34-2.noarch 1619631111 116499 a4f98b6947a0f491540672c6d62026ce installed
+DEBUG util.py:445:  fedora-release-34-39.noarch 1637825783 0 73c95528d8ea77184be2d7124a80aee8 installed
+DEBUG util.py:445:  fedora-repos-34-2.noarch 1619631111 4597 c0c78d4579202cea8d6191783916c485 installed
+DEBUG util.py:445:  fedora-release-common-34-39.noarch 1637825783 16513 51a47e8e13dfe722be7b42425c033a76 installed
+DEBUG util.py:445:  setup-2.13.7-3.fc34.noarch 1611885234 726441 ffc4415ce8e2fb1bee1950eacaeb1229 installed
+DEBUG util.py:445:  filesystem-3.14-5.fc34.x86_64 1611641110 106 d5a9d9a810f2734d0c3bdbc433a6eafc installed
+DEBUG util.py:445:  basesystem-11-11.fc34.noarch 1611625529 0 f37a67cee02f627dc27d2ef8985129d9 installed
+DEBUG util.py:445:  coreutils-common-8.32-32.fc34.x86_64 1647850343 10880567 6efb4b76b6622b534a0c41fbe24bde96 installed
+DEBUG util.py:445:  qt5-srpm-macros-5.15.2-2.fc34.noarch 1611823375 492 38d92f9b84621de0ff7ef09da86aae28 installed
+DEBUG util.py:445:  publicsuffix-list-dafsa-20190417-5.fc34.noarch 1611809108 64992 a87c04fa613c586a3e3de26d1556a5b8 installed
+DEBUG util.py:445:  pkgconf-m4-1.7.3-6.fc34.noarch 1611806818 14187 a042b1881458a9ab99be6b2bbaf70581 installed
+DEBUG util.py:445:  perl-srpm-macros-1-39.fc34.noarch 1611804023 862 1d235fecf1190135715af7ce9d19fe9a installed
+DEBUG util.py:445:  pcre2-syntax-10.36-4.fc34.noarch 1613748866 219646 a9927c33816f7689c330836ba56eecc4 installed
+DEBUG util.py:445:  openblas-srpm-macros-2-9.fc34.noarch 1611781019 104 eaea0d1d8ed7ad7695558abb0e296b99 installed
+DEBUG util.py:445:  ocaml-srpm-macros-6-4.fc34.noarch 1611778305 745 8ca5e3457da5ee6f6884ab1edbc0543b installed
+DEBUG util.py:445:  nim-srpm-macros-3-4.fc34.noarch 1611770585 1098 c861f737c8515338b14811cba72b7345 installed
+DEBUG util.py:445:  ncurses-base-6.2-4.20200222.fc34.noarch 1611770515 292349 636d18e9071ad9b04d0934b1ee004aee installed
+DEBUG util.py:445:  bash-5.1.0-2.fc34.x86_64 1611625556 7739748 ef51add9daad6b22916816c848b95965 installed
+DEBUG util.py:445:  ncurses-libs-6.2-4.20200222.fc34.x86_64 1611766576 993607 35666d234548dab8905ff1c1cd7f9f1e installed
+DEBUG util.py:445:  glibc-common-2.33-21.fc34.x86_64 1643161903 8080742 6f42c7e9b72aac7c59ba119fb3790218 installed
+DEBUG util.py:445:  glibc-minimal-langpack-2.33-21.fc34.x86_64 1643161903 0 fa556e9e5410df8af07daa5fa9787634 installed
+DEBUG util.py:445:  glibc-2.33-21.fc34.x86_64 1643161903 14652148 2de06cade68fa5f718e721a7ac5850c9 installed
+DEBUG util.py:445:  zlib-1.2.11-26.fc34.x86_64 1617200601 203553 9cc469516534cddcb1a65df51d77b42c installed
+DEBUG util.py:445:  xz-libs-5.2.5-5.fc34.x86_64 1611908414 181325 748b002a92331d984fb55fd54ae989c6 installed
+DEBUG util.py:445:  bzip2-libs-1.0.8-6.fc34.x86_64 1611920393 78772 b00bdd2fe7f3777166764fd6cb8e7ad8 installed
+DEBUG util.py:445:  elfutils-libelf-0.186-1.fc34.x86_64 1637847399 1027785 bc9475a317b0a11c6cda6c73af583880 installed
+DEBUG util.py:445:  libstdc++-11.2.1-9.fc34.x86_64 1643275848 2487247 f964533db94cdd870457337402f780d0 installed
+DEBUG util.py:445:  libxcrypt-4.4.28-1.fc34.x86_64 1643755524 275498 90bc5c5e664eb60c3638002f1de64725 installed
+DEBUG util.py:445:  libzstd-1.5.2-1.fc34.x86_64 1642954840 738611 893f8fe592f880e776ddaafc887433fa installed
+DEBUG util.py:445:  gmp-1:6.2.0-6.fc34.x86_64 1611661283 806286 3d7657ba3d311eb6abd212abf9dad18c installed
+DEBUG util.py:445:  libattr-2.5.1-1.fc34.x86_64 1615881285 29533 94fa83298ce60f6340e7e08a5b1b5287 installed
+DEBUG util.py:445:  libacl-2.3.1-1.fc34.x86_64 1615881590 41274 84445b0983d7b68d567b0e52015ece14 installed
+DEBUG util.py:445:  libcap-2.48-2.fc34.x86_64 1613343645 186023 db6789f3b38e1c27114266393453c088 installed
+DEBUG util.py:445:  libcom_err-1.45.6-5.fc34.x86_64 1611637090 68553 10dfed3d36d6924cb5cfa937747a6c51 installed
+DEBUG util.py:445:  libuuid-2.36.2-1.fc34.x86_64 1613143199 34845 0440cfbb2107430d121839b7dcdef77e installed
+DEBUG util.py:445:  popt-1.18-4.fc34.x86_64 1615019341 130408 3a078214c18c36ca490c35ef5e52b797 installed
+DEBUG util.py:445:  lz4-libs-1.9.3-2.fc34.x86_64 1611751292 145515 f170f2fcc15c98de6b299ee4e6c0dc4f installed
+DEBUG util.py:445:  readline-8.1-2.fc34.x86_64 1611831291 492932 714bbba83553a3c852b3cfbbd2d066a1 installed
+DEBUG util.py:445:  mpfr-4.1.0-7.fc34.x86_64 1621737500 803903 6194a2f9ac8099a261780e307e6e7cb7 installed
+DEBUG util.py:445:  unzip-6.0-50.fc34.x86_64 1611899183 398971 bdda4cd00fa0379f0bc59a1298e82bfb installed
+DEBUG util.py:445:  sqlite-libs-3.34.1-2.fc34.x86_64 1611890041 1310976 0fe05e0d43f9ada2d33542d30acbbf61 installed
+DEBUG util.py:445:  file-libs-5.39-7.fc34.x86_64 1632926866 8090322 dba793a25257d6d6952dd7b2cb37d8c1 installed
+DEBUG util.py:445:  file-5.39-7.fc34.x86_64 1632926866 103224 2ad691a3454dde797934ebc62b952efa installed
+DEBUG util.py:445:  alternatives-1.15-2.fc34.x86_64 1611627930 63281 5b66057a5ff527e9d5a3d808409a5ca4 installed
+DEBUG util.py:445:  libcap-ng-0.8.2-4.fc34.x86_64 1612295128 75380 7f0416f2a720e23e2b7e049012f41154 installed
+DEBUG util.py:445:  audit-libs-3.0.6-1.fc34.x86_64 1633109643 307334 e31dba5057968ee7a434ee7a80f7b2ff installed
+DEBUG util.py:445:  libunistring-0.9.10-10.fc34.x86_64 1611745039 1638915 04f496b5133bd0c182c8f74c7ee65da2 installed
+DEBUG util.py:445:  libidn2-2.3.2-1.fc34.x86_64 1626825454 291800 4275c4f9912919de754e2e0dbc3d34af installed
+DEBUG util.py:445:  pcre2-10.36-4.fc34.x86_64 1613748797 635226 ee0a32425a67b85b0c6cb3a8cc5ad9ad installed
+DEBUG util.py:445:  libdb-5.3.28-49.fc34.x86_64 1632311082 1922878 a1d459f0ef4b015d3d2a24fdebac99cb installed
+DEBUG util.py:445:  libsepol-3.2-2.fc34.x86_64 1636642527 728611 eaf4c6c467514c0410d7ee91ce239f55 installed
+DEBUG util.py:445:  libselinux-3.2-1.fc34.x86_64 1615286469 172477 4e716b4afce012340500739a34b02d65 installed
+DEBUG util.py:445:  sed-4.8-7.fc34.x86_64 1611885323 813671 b434219b6737486c4bcfdeecf5ca2fd9 installed
+DEBUG util.py:445:  findutils-1:4.8.0-2.fc34.x86_64 1611641227 1766798 8b6eb20044e8308147a801f9bfc4668b installed
+DEBUG util.py:445:  lua-libs-5.4.4-1.fc34.x86_64 1643742082 555846 87634c0476356234bb7a556d6d1d590d installed
+DEBUG util.py:445:  libsemanage-3.2-1.fc34.x86_64 1615287479 301440 739419bdea02116b569a4057538fd605 installed
+DEBUG util.py:445:  shadow-utils-2:4.8.1-10.fc34.x86_64 1638280170 3775538 9d3fa0d0c6739ee1d57beea9247e7b2a installed
+DEBUG util.py:445:  libutempter-1.2.1-4.fc34.x86_64 1611745214 58905 d3080fbc19ea12f97a4a907750267093 installed
+DEBUG util.py:445:  tar-2:1.34-1.fc34.x86_64 1613638558 3173210 5379686b1d1281ee358820808b96653a installed
+DEBUG util.py:445:  libpsl-0.21.1-3.fc34.x86_64 1611741720 74608 a40a5f9d919810bd7309a363673ce9ca installed
+DEBUG util.py:445:  zip-3.0-28.fc34.x86_64 1611908999 717583 22990b7580b547fe26cdb1b453082933 installed
+DEBUG util.py:445:  zstd-1.5.2-1.fc34.x86_64 1642954840 1592136 1d995957569bd936bb93a0a8208bfc8f installed
+DEBUG util.py:445:  dwz-0.14-1.fc34.x86_64 1615301252 280766 99df04f2447d490ecf7dc4983c47a56c installed
+DEBUG util.py:445:  bzip2-1.0.8-6.fc34.x86_64 1611920393 96152 2d82b4bef01c955e882d5af420fa2032 installed
+DEBUG util.py:445:  libxml2-2.9.13-1.fc34.x86_64 1645440800 1962044 3cdfc6fdc06ff0c00c92258f26b8d1fa installed
+DEBUG util.py:445:  info-6.7-10.fc34.x86_64 1612273577 508178 496572eb8a14a201500bbabc8868bea6 installed
+DEBUG util.py:445:  ed-1.14.2-10.fc34.x86_64 1611637282 129955 30f132b5cc1864ca9389589b9c911afb installed
+DEBUG util.py:445:  patch-2.7.6-14.fc34.x86_64 1612048426 265626 2462e19d2aa8ebf1844379b92cbd467c installed
+DEBUG util.py:445:  cpio-2.13-10.fc34.x86_64 1613653403 1084298 0aea2c60d4a09bb233cae49936148d50 installed
+DEBUG util.py:445:  diffutils-3.7-8.fc34.x86_64 1611635023 1468179 3e8003dca253bf1e919f773f1c8cf705 installed
+DEBUG util.py:445:  keyutils-libs-1.6.1-2.fc34.x86_64 1611711780 55737 977212f99882edb79e85a473c1bae025 installed
+DEBUG util.py:445:  libbrotli-1.0.9-4.fc34.x86_64 1611626510 784698 e887a73a12d4cd6dd8b384fe52ecc905 installed
+DEBUG util.py:445:  libffi-3.1-28.fc34.x86_64 1611731196 56840 077bc570623183e5b0eb94e8ef14e874 installed
+DEBUG util.py:445:  p11-kit-0.23.22-3.fc34.x86_64 1611765879 1662976 05fe6c869acbb755ef89c3eb3172e1fe installed
+DEBUG util.py:445:  libgpg-error-1.42-1.fc34.x86_64 1616427645 836712 a270709e0a5cf6f0b6a86f790ee82b6e installed
+DEBUG util.py:445:  libgcrypt-1.9.3-3.fc34.x86_64 1623757247 1391897 07a2a1a09227890efdb57c2b3a27cf88 installed
+DEBUG util.py:445:  libnghttp2-1.43.0-2.fc34.x86_64 1617206896 171196 d9cd7c292e23ab72104cdd4104fda3eb installed
+DEBUG util.py:445:  libpkgconf-1.7.3-6.fc34.x86_64 1611806595 76145 c75fa248dc0906972d8f2dc0f13fcd41 installed
+DEBUG util.py:445:  pkgconf-1.7.3-6.fc34.x86_64 1611806595 78602 9dd04089af48d854af72e93e0d3c0110 installed
+DEBUG util.py:445:  pkgconf-pkg-config-1.7.3-6.fc34.x86_64 1611806595 1203 5805de0d8ec15bbceadb2867554b9fec installed
+DEBUG util.py:445:  libsigsegv-2.13-2.fc34.x86_64 1611744017 50506 cbc6ffacb120236757db0dc033c6385c installed
+DEBUG util.py:445:  gawk-5.1.0-3.fc34.x86_64 1611645816 1686814 53892b268a54d767ea012f050f7fff6d installed
+DEBUG util.py:445:  libsmartcols-2.36.2-1.fc34.x86_64 1613143199 134427 d255a364fc9c50b55a8ef3b33d92ad1e installed
+DEBUG util.py:445:  libtasn1-4.16.0-4.fc34.x86_64 1611744623 183980 714f8e24ee46e1514f63d68d063ea5a4 installed
+DEBUG util.py:445:  p11-kit-trust-0.23.22-3.fc34.x86_64 1611765879 447351 1d6021e80610477b5ad7689e21d563fb installed
+DEBUG util.py:445:  libverto-0.3.2-1.fc34.x86_64 1615841664 30469 1b87f338510cdcd46576eb2f7cf491f5 installed
+DEBUG util.py:445:  pcre-8.44-3.fc34.1.x86_64 1612041534 540448 15046fd768f41718205649c3b19cce31 installed
+DEBUG util.py:445:  grep-3.6-2.fc34.x86_64 1612039505 857936 0f4adc1914f6701e9ec4a98b8cdeea9d installed
+DEBUG util.py:445:  xz-5.2.5-5.fc34.x86_64 1611908414 685737 d99dbde81cd70d2eb04eef3e1b7f26bb installed
+DEBUG util.py:445:  openssl-libs-1:1.1.1n-1.fc34.x86_64 1647621965 3857156 84168db2b54000d9c7ad8523c779c39a installed
+DEBUG util.py:445:  coreutils-8.32-32.fc34.x86_64 1647850343 6057506 81ed4e6751f66880b87934ceab352372 installed
+DEBUG util.py:445:  ca-certificates-2021.2.52-1.0.fc34.noarch 1639415500 972279 260338363ac81585df05a41ba94818ca installed
+DEBUG util.py:445:  krb5-libs-1.19.2-5.fc34.x86_64 1649186979 2193478 8aeb12674325d99aca0e75e4344ca158 installed
+DEBUG util.py:445:  libblkid-2.36.2-1.fc34.x86_64 1613143199 217737 c66da00d552d59d7b9625f4e73dbd657 installed
+DEBUG util.py:445:  libtirpc-1.3.2-0.fc34.x86_64 1621361360 207802 183a8fd84a930988dafa89363f5c0081 installed
+DEBUG util.py:445:  gzip-1.10-4.fc34.x86_64 1611698922 357450 62d3246a90f1aae7f095f96df2d760af installed
+DEBUG util.py:445:  cracklib-2.9.6-27.fc34.x86_64 1630359585 251906 9abacf4eb06fcb500513c966495a5fdf installed
+DEBUG util.py:445:  libnsl2-1.3.0-2.fc34.x86_64 1611739416 130510 91fafce2937a88c68dc3445fe827449a installed
+DEBUG util.py:445:  libfdisk-2.36.2-1.fc34.x86_64 1613143199 367019 5948c8519debf9d82f2e842582620946 installed
+DEBUG util.py:445:  libmount-2.36.2-1.fc34.x86_64 1613143199 301405 6ede29952a194d8d468daaac00cfbdd1 installed
+DEBUG util.py:445:  cyrus-sasl-lib-2.1.27-9.fc34.x86_64 1645614111 732340 f367b4ab266f5fd52300c0fdd49d8d03 installed
+DEBUG util.py:445:  openldap-2.4.57-6.fc34.x86_64 1633096860 709712 3d202c9fd9a770f984ff697010de87e3 installed
+DEBUG util.py:445:  libssh-0.9.6-1.fc34.x86_64 1632239294 513193 1c9a8ccddbe9e2c89590fd03ae269bb6 installed
+DEBUG util.py:445:  libcurl-7.76.1-12.fc34.x86_64 1631865106 664574 0b3c68b47de812710c412ea529d5e571 installed
+DEBUG util.py:445:  curl-7.76.1-12.fc34.x86_64 1631865106 685713 d304c20bb5e122a5c776b999aa61426b installed
+DEBUG util.py:445:  systemd-libs-248.10-1.fc34.x86_64 1642072106 1605800 010df3f1d24085ce48d491cf2a73034e installed
+DEBUG util.py:445:  libarchive-3.5.2-2.fc34.x86_64 1630307570 907373 1c05f721996f67354086f0878062f2c4 installed
+DEBUG util.py:445:  rpm-libs-4.16.1.3-1.fc34.x86_64 1616410991 767180 bfef79f94c5feee135dbb0b9a25ca6be installed
+DEBUG util.py:445:  rpm-4.16.1.3-1.fc34.x86_64 1616410991 2752015 6136a2e8a00ef7f5f73005eee1bcfba8 installed
+DEBUG util.py:445:  lua-srpm-macros-1-4.fc34.noarch 1611750118 1314 871490573b1eec113eefe83e81e14c99 installed
+DEBUG util.py:445:  efi-srpm-macros-5-4.fc34.noarch 1630608979 41111 6214e8fc1635e6173e9f8c2bd187b6e3 installed
+DEBUG util.py:445:  rpmautospec-rpm-macros-0.2.5-1.fc34.noarch 1628264797 698 4ce93205fb9bf45b0a0af16e54bdd389 installed
+DEBUG util.py:445:  libeconf-0.4.0-1.fc34.x86_64 1625741391 46163 e9fcf3840b2a9f1d3c46cd5e7eb961b6 installed
+DEBUG util.py:445:  libpwquality-1.4.4-6.fc34.x86_64 1628689040 415708 5486243b690c9a9139fe5fd6f4d1b740 installed
+DEBUG util.py:445:  pam-1.5.1-8.fc34.x86_64 1642410138 1919783 5c2aff2a392dd1f30dd9c5ed31186696 installed
+DEBUG util.py:445:  libgomp-11.2.1-9.fc34.x86_64 1643275848 417086 6890172350fa9bd66f1a9d9083a643bb installed
+DEBUG util.py:445:  xxhash-libs-0.8.1-1.fc34.x86_64 1638346061 101056 d6d7afec6dbacf8c95998db6c9bd0835 installed
+DEBUG util.py:445:  elfutils-default-yama-scope-0.186-1.fc34.noarch 1637847501 1810 2ccd518949d7b44543a94b359d8766c4 installed
+DEBUG util.py:445:  elfutils-libs-0.186-1.fc34.x86_64 1637847399 713549 3e6f6001230e6114b2282d6f7587ed1e installed
+DEBUG util.py:445:  elfutils-debuginfod-client-0.186-1.fc34.x86_64 1637847399 53303 5d58b0f1a8e031d482c5330a8f08abe9 installed
+DEBUG util.py:445:  binutils-gold-2.35.2-6.fc34.x86_64 1631809346 1955995 42ec35c8e8380fd33bf6664c5603e845 installed
+DEBUG util.py:445:  binutils-2.35.2-6.fc34.x86_64 1631809346 31457797 712dcfd0aedc746b3e1fbd31a2c5e944 installed
+DEBUG util.py:445:  elfutils-0.186-1.fc34.x86_64 1637847399 2840385 8f454b6a15035fb825b934be129b6c0e installed
+DEBUG util.py:445:  gdb-minimal-11.1-5.fc34.x86_64 1636667684 12671044 42c230e0df14719d0514f21928328c21 installed
+DEBUG util.py:445:  rpm-build-libs-4.16.1.3-1.fc34.x86_64 1616410991 199526 b256303a11dafa0b4bb154927abca89b installed
+DEBUG util.py:445:  kernel-srpm-macros-1.0-4.fc34.noarch 1611711236 116 c6beadfa2ad7d32a17a61c5062667e14 installed
+DEBUG util.py:445:  gnat-srpm-macros-4-13.fc34.noarch 1611661182 725 aecaa2d4a9811b85102ff17061efac9c installed
+DEBUG util.py:445:  ghc-srpm-macros-1.5.0-4.fc34.noarch 1611656103 535 9ee652aa75343fb2a59f152f4ab9e905 installed
+DEBUG util.py:445:  fpc-srpm-macros-1.3-3.fc34.noarch 1611642764 144 c525823ff27ef08c8e14d10d91f1ce16 installed
+DEBUG util.py:445:  fonts-srpm-macros-1:2.0.5-5.fc34.noarch 1611641921 56503 2032fa09824bcef6145a54d4622c48d2 installed
+DEBUG util.py:445:  go-srpm-macros-3.0.15-1.fc34.noarch 1647110936 60321 a63c53336172342ab22fdd818ecca52e installed
+DEBUG util.py:445:  python-srpm-macros-3.9-41.fc34.noarch 1635938119 34628 3463f54b30ad5aff2d371d055d2f10ae installed
+DEBUG util.py:445:  redhat-rpm-config-183-3.fc34.noarch 1629065051 178435 f3e108ae076792363724fefe334de870 installed
+DEBUG util.py:445:  rpm-build-4.16.1.3-1.fc34.x86_64 1616410991 247997 f5aea981d3c3b5346a5b7df3f113f720 installed
+DEBUG util.py:445:  util-linux-2.36.2-1.fc34.x86_64 1613143199 13018140 bc38375f30f845290d7e9f707b28e23b installed
+DEBUG util.py:445:  which-2.21-26.fc34.x86_64 1620122049 82455 a29972c315eee8165dc4ad292a0bc311 installed
+DEBUG util.py:596:  Child return code was: 0
+DEBUG util.py:622:  child environment: None
+DEBUG backend.py:777:  Copying packages to result dir
+INFO backend.py:500:  End chain build: SRPMS/ghcup-hs-0.1.17.5-1.fc34.src.rpm
+INFO backend.py:512:  Success building ghcup-hs-0.1.17.5-1.fc34.src.rpm
+DEBUG file_util.py:30:  touching file: /home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default/ghcup-hs-0.1.17.5-1.fc34/success
+DEBUG util.py:622:  child environment: None
+DEBUG util.py:540:  Executing command: ['/usr/bin/createrepo_c', '-d', '-q', '-x', '*.src.rpm', '--update', '/home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:596:  Child return code was: 0
+DEBUG file_downloader.py:40:  Local file: SRPMS/iohk-libsodium-1.0.18.66f017f1-1.fc34.src.rpm
+INFO backend.py:478:  Start chain build: SRPMS/iohk-libsodium-1.0.18.66f017f1-1.fc34.src.rpm
+DEBUG file_util.py:17:  ensuring that dir exists: /home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default/iohk-libsodium-1.0.18.66f017f1-1.fc34
+DEBUG file_util.py:20:  creating dir: /home/bsap/rpmbuild/cardano-node/fc34/x86_64/results/default/iohk-libsodium-1.0.18.66f017f1-1.fc34

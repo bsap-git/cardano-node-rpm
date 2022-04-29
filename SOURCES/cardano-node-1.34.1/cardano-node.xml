@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>cardano-node</short>
+  <description>cardano-node firewall rules to work with systemd sockets.</description>
+  <port port="29171-29172" protocol="tcp"/>
+  <protocol value="tcp"/>
+  <source-port port="3001" protocol="tcp"/>
+</service>
